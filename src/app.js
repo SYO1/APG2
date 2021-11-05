@@ -27,10 +27,11 @@
 	let p4Click = false;
 	let p5Click = false;
 	//let p6Click = false;
-	let rand = Math.floor(Math.random()*3);
+	//let rand = Math.floor(Math.random()*3);
 
 
 	client.on('message', (channel, tags, message, self) => {
+		let rand = Math.floor(Math.random()*3);
 		// Ignore echoed messages.
 		if(self) return;
 		
@@ -106,6 +107,7 @@
 
 		}
 		else{
+			let rand = Math.floor(Math.random()*3);
 			switch(rand)
 			{
 				case 0:
