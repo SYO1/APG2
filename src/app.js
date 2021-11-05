@@ -104,13 +104,13 @@
 			switch(rand)
 			{
 				case 0:
-					client.say(channel, `@${tags.username}, Hello everyone!`);
+					client.say(`#syo117`, `@${name}, Hello everyone!`);
 					break;
 				case 1:
-					client.say(channel, `@${tags.username}, Nice to meet you!`);
+					client.say(`#syo117`, `@${name}, Nice to meet you!`);
 					break;
 				case 2:
-					client.say(channel, `@${tags.username}, Let's play the game!`);
+					client.say(`#syo117`, `@${name}, Let's play the game!`);
 			}
 			//client.say(`#syo117`, `@${name}, Confuse`);
 			//client.say(`#syo117`, `@${name}, good`);
