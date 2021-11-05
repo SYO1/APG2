@@ -27,6 +27,7 @@
 	let p4Click = false;
 	let p5Click = false;
 	//let p6Click = false;
+	var rand = Math.floor(Math.random()*3);
 
 	client.on('message', (channel, tags, message, self) => {
 		// Ignore echoed messages.
@@ -39,7 +40,18 @@
 		}
 		else if (p2Click === true)
 		{
-			client.say(channel, `@${tags.username}, Confuse`);
+			switch(rand)
+			{
+				case 0:
+					client.say(channel, `@${tags.username}, Hello everyone!`);
+					break;
+				case 1:
+					client.say(channel, `@${tags.username}, Nice to meet you!`);
+					break;
+				case 2:
+					client.say(channel, `@${tags.username}, Let's play the game!`);
+			}
+			//client.say(channel, `@${tags.username}, Confuse`);
 			//client.say(channel, `@${tags.username}, good`);
 		}
 		else if (p3Click === true)
@@ -89,7 +101,18 @@
 
 		}
 		else{
-			client.say(`#syo117`, `@${name}, Confuse`);
+			switch(rand)
+			{
+				case 0:
+					client.say(channel, `@${tags.username}, Hello everyone!`);
+					break;
+				case 1:
+					client.say(channel, `@${tags.username}, Nice to meet you!`);
+					break;
+				case 2:
+					client.say(channel, `@${tags.username}, Let's play the game!`);
+			}
+			//client.say(`#syo117`, `@${name}, Confuse`);
 			//client.say(`#syo117`, `@${name}, good`);
 		}
 	}
