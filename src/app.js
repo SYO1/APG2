@@ -31,7 +31,6 @@
 
 
 	client.on('message', (channel, tags, message, self) => {
-		let rand = Math.floor(Math.random()*3);
 		// Ignore echoed messages.
 		if(self) return;
 		
@@ -42,6 +41,7 @@
 		}
 		else if (p2Click === true)
 		{
+			let rand = Math.floor(Math.random()*3);
 			switch(rand)
 			{
 				case 0:
