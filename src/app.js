@@ -27,7 +27,8 @@
 	let p4Click = false;
 	let p5Click = false;
 	//let p6Click = false;
-	var rand = Math.floor(Math.random()*3);
+	let rand = Math.floor(Math.random()*3);
+
 
 	client.on('message', (channel, tags, message, self) => {
 		// Ignore echoed messages.
