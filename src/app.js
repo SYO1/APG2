@@ -29,6 +29,8 @@
 	let p6Click = false;
 	let p7Click = false;
 	let p8Click = false;
+	let p9Click = false;
+	let p10Click = false;
 	//let p6Click = false;
 	//let rand = Math.floor(Math.random()*3);
 
@@ -89,6 +91,14 @@
 			client.say(channel, `@${tags.username}, ;P`);
 		}
 
+		else if (p9Click === true)
+		{
+			client.say(channel, `@${tags.username}, :|`);
+		}
+		else if (p10Click === true)
+		{
+			client.say(channel, `@${tags.username}, >(`);
+		}
 		//else if (p6Click === true)
 		//{
 		//	client.say(channel, `@${tags.username}, Co-c`);
@@ -222,6 +232,31 @@
 		}
 	}
 
+	function sentMessageBotP9(){
+		var name = document.getElementById('input-text-twitch').value;
+	
+		if(name === "")
+		{
+			alert("Please type your full name");
+	
+		}
+		else{
+			client.say(`#syo117`, `@${name}, :|`);
+		}
+	}
+
+	function sentMessageBotP10(){
+		var name = document.getElementById('input-text-twitch').value;
+	
+		if(name === "")
+		{
+			alert("Please type your full name");
+	
+		}
+		else{
+			client.say(`#syo117`, `@${name}, >(`);
+		}
+	}
 	//function sentMessageBotP6(){
 	//	var name = document.getElementById('input-text-twitch').value;
 	//
